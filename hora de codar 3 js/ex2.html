@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Digite o 1 valor:"))
+        let n2 = parseFloat(prompt("Digite o 2 valor:"))
+
+        while (n2 <= 0) {
+           n2 = parseFloat(prompt("Valor inválido. O valor deve ser maior que 0"))
+        }
+
+        let resultado = n1 / n2
+        alert(`O resultado da divisão de ${n1} e ${n2} é igual á ${resultado}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <script>
+        function Lernota() {
+            let nota;
+            while(true) {
+                nota = parseFloat(prompt("Digite a nota: (de 0 a 10)"))
+                if (nota >= 0 && nota <= 10) {
+                    return nota
+                } else {
+                    alert("Nota inválida")
+                }
+            }
+        }
+
+        let soma = 0;
+
+        for (let i =1; i <= 6; i++) {
+            alert(`Digite a nota ${i}`)
+            soma += Lernota()
+        }
+
+        let media = soma / 6
+        alert(`A média das notas do aluno é ${media.toFixed(2)}`)
+    </script>
+</body>
+</html>

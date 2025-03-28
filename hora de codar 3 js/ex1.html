@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+  
+    <script>
+       let tempo = parseInt(prompt("Digite o tempo inicial par a bomba:"))
+
+       if(isNaN(tempo) || tempo <= 0) {
+        alert(`Digite um número maior que`)
+       } else {
+        function contagem() {
+            let intervalo = setInterval(function() {
+                alert(`Tempo restante: ${tempo} segundos`)
+
+                tempo--
+
+                if (tempo < 0) {
+                    clearInterval(intervalo)
+                    alert("EXPLOSÃO")
+                }
+            }, 1000)
+        }
+        contagem()
+       }
+    </script>
+</body>
+</html>

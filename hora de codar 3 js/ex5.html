@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+        let n1 = parseInt(prompt("Digite o 1 número:"))
+        let n2 = parseInt(prompt("Digite o 2 número: (que seja maior que o primeiro)"))
+
+        let soma = 0;
+        let qntd = 0;
+
+        for(let i = n1; i <= n2; i++) {
+            soma += i
+            qntd++
+        }
+
+        let media = soma / qntd
+        alert(`A media aritimetica dos números é de ${media}`)
+    </script>
+</body>
+</html>
